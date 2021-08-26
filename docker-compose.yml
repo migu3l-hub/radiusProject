@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  freeradius:
+    build: ./app
+    restart: always
+    container_name: radius
+    ports:
+    - 1812:1812
+    - 1813:1813
+
+
+
+# QUITAR EL ".TXT" EL ARCHIVO AUTHORIZE DE LA CARPETA RADDB
